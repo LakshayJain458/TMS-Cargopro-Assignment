@@ -212,9 +212,6 @@ erDiagram
     }
 ```
 
-### Database Schema Diagram (Visual)
-
-![Database Schema](https://raw.githubusercontent.com/user/repo/main/schema.drawio.png)
 
 
 ---
@@ -242,7 +239,7 @@ erDiagram
    ```
 
 3. **Set Environment Variables**
-   
+
    Create a `.env` file or set environment variables:
    ```properties
    DB_USER=your_postgres_username
@@ -271,9 +268,9 @@ erDiagram
    ```
 
 6. **Access the application**
-   - Application: `http://localhost:8080`
-   - Swagger UI: `http://localhost:8080/swagger-ui.html`
-   - API Docs JSON: `http://localhost:8080/api-docs`
+    - Application: `http://localhost:8080`
+    - Swagger UI: `http://localhost:8080/swagger-ui.html`
+    - API Docs JSON: `http://localhost:8080/api-docs`
 
 ---
 
@@ -289,11 +286,8 @@ The API is fully documented using **OpenAPI 3.0** specification with **Swagger U
 
 ### Postman Collection
 
-Import the Postman collection for quick API testing:
+[📥 Download Postman Collection](./tms-cargopro.postman_collection.json)
 
-[📥 Download Postman Collection](./docs/TMS_CargoPro.postman_collection.json)
-
-Or use the Swagger UI to generate requests automatically.
 
 ---
 
@@ -385,34 +379,6 @@ CONFIRMED → COMPLETED/CANCELLED
 
 ---
 
-## 🧪 Test Coverage
-
-### Running Tests
-
-```bash
-./mvnw test
-```
-
-### Test Coverage Report
-
-![Test Coverage Screenshot](./docs/test-coverage-screenshot.png)
-
-**Current Coverage:**
-- **Lines:** 0% (No tests implemented yet)
-- **Branches:** 0%
-- **Methods:** 0%
-
-*Note: Test implementation is in progress. The application has been designed with testability in mind using service layer separation and dependency injection.*
-
-### Recommended Test Types
-
-- ✅ Unit Tests (Service Layer)
-- ✅ Integration Tests (Repository Layer)
-- ✅ Controller Tests (MockMvc)
-- ✅ End-to-End Tests
-
----
-
 ## 📊 Example Requests
 
 ### 1. Create a Transporter
@@ -491,44 +457,6 @@ Contributions are welcome! Please follow these steps:
 ## 📝 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
 ---
 
-## 👨‍💻 Authors
-
-- **TMS CargoPro Team**
-- Email: support@cargopro.com
-
----
-
-## 🙏 Acknowledgments
-
-- Spring Boot community
-- PostgreSQL community
-- All contributors and testers
-
----
-
-## 📞 Support
-
-For support, email support@cargopro.com or create an issue in the repository.
-
----
-
-## 🔮 Future Enhancements
-
-- [ ] User authentication & authorization (Spring Security + JWT)
-- [ ] Real-time notifications (WebSocket)
-- [ ] Advanced analytics dashboard
-- [ ] Payment gateway integration
-- [ ] Mobile app support
-- [ ] Multi-language support
-- [ ] Docker containerization
-- [ ] Kubernetes deployment
-- [ ] CI/CD pipeline
-- [ ] Comprehensive test suite (Unit, Integration, E2E)
-
----
-
-**Made with ❤️ by TMS CargoPro Team**
-
+**Made with ❤️ by Lakshay Jain**
