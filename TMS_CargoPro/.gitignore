@@ -1,0 +1,63 @@
+# Compiled class files
+*.h2.db
+# H2 Database
+
+spring.log
+# Spring Boot
+
+hs_err_pid*
+# Virtual machine crash logs
+
+*.rar
+*.tar.gz
+*.zip
+*.ear
+*.nar
+*.war
+*.jar
+# Package Files
+
+*.db
+# Database
+
+# application-local.properties
+# application-prod.properties
+# Application properties (if containing sensitive data)
+.env
+.env.local
+.env.*.local
+# Environment variables
+
+Thumbs.db
+.DS_Store
+# OS
+
+.vscode/
+# IDE - VS Code
+
+.settings/
+.classpath
+.project
+# IDE - Eclipse
+
+*.ipr
+*.iws
+*.iml
+.idea/
+# IDE - IntelliJ IDEA
+
+mvnw.cmd
+mvnw
+.mvn/
+# Maven
+
+logs/
+*.log
+# Log files
+
+out/
+build/
+bin/
+target/
+*.class
+
