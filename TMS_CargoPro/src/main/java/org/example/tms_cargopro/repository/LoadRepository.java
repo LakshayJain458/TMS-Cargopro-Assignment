@@ -17,11 +17,10 @@ import java.util.UUID;
 @Repository
 public interface LoadRepository extends JpaRepository<Load, UUID> {
 
+    @Query("SELECT l FROM Load l WHERE l.loadId = :loadId")
     @Lock(LockModeType.OPTIMISTIC)
     Optional<Load> findByLoadId(@Param("loadId") UUID loadId);
 
-    @Query("SELECT l FROM Load l WHERE l.loadId = :loadId")
-    @Lock(LockModeType.OPTIMISTIC)
     Page<Load> findByStatus(LoadStatus status, Pageable pageable);
 
     Page<Load> findByShipperId(String shipperId, Pageable pageable);
